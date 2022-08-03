@@ -1,0 +1,50 @@
+.slider {
+  width: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider-line {
+  width: 400px;
+  display: flex;
+  margin-top: 20px;
+  position: relative;
+  left: 0;
+
+  transition: ease 1s;
+
+  &__img {
+    width: 80px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  transition: background-color 250ms linear, color 250ms linear;
+
+  background-color: pink;
+
+  &:hover,
+  &:focus {
+    // background-color: rgba(255, 192, 203, 0.476);
+    background-color: skyblue;
+    color: white;
+
+    box-shadow: 0px 10px 30px rgba(114, 110, 110, 0.25);
+  }
+}
