@@ -1,0 +1,43 @@
+.infinity-slider {
+  padding-bottom: 100px;
+
+  &__wrap {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 50px auto;
+  }
+  &__slider-line {
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 500px;
+  }
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    opacity: 1;
+    transition: linear 0.5s;
+  }
+
+  &__btns {
+    &--up {
+      position: absolute;
+      top: 43%;
+      left: -107px;
+    }
+
+    &--down {
+      position: absolute;
+      top: 57%;
+      left: -120px;
+    }
+  }
+
+  & .opacity {
+    opacity: 0;
+  }
+}

@@ -317,7 +317,7 @@ body {
 .slider-line {
   width: 400px;
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
   position: relative;
   left: 0;
   transition: ease 1s;
@@ -349,4 +349,63 @@ body {
   background-color: skyblue;
   color: white;
   box-shadow: 0px 10px 30px rgba(114, 110, 110, 0.25);
+}
+
+.slider-2__slider-line {
+  display: flex;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.slider-2__img {
+  width: 80px;
+}
+.slider-2__img:not(:last-child) {
+  margin-right: 10px;
+}
+.slider-2__img.active {
+  border: 2px solid skyblue;
+}
+.slider-2__btns {
+  padding-bottom: 25px;
+}
+.slider-2__btn {
+  margin: 0;
+}
+
+.infinity-slider {
+  padding-bottom: 100px;
+}
+.infinity-slider__wrap {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 50px auto;
+}
+.infinity-slider__slider-line {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 500px;
+}
+.infinity-slider__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  opacity: 1;
+  transition: linear 0.5s;
+}
+.infinity-slider__btns--up {
+  position: absolute;
+  top: 43%;
+  left: -107px;
+}
+.infinity-slider__btns--down {
+  position: absolute;
+  top: 57%;
+  left: -120px;
+}
+.infinity-slider .opacity {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

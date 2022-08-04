@@ -8,24 +8,68 @@
     <title>SLIDER</title>
   </head>
   <body>
-    <div class="container">
-      <div class="slider">
-        <div class="slider-line">
-          <img class="slider-line__img" src="./img/slider1.png" alt="img" />
-          <img class="slider-line__img" src="./img/slider2.png" alt="img" />
-          <img class="slider-line__img" src="./img/slider3.png" alt="img" />
-          <img class="slider-line__img" src="./img/slider4.png" alt="img" />
-          <img class="slider-line__img" src="./img/slider5.png" alt="img" />
+    <!-- SLIDER -->
+    <section>
+      <div class="container">
+        <div class="slider">
+          <div class="slider-line">
+            <img class="slider-line__img" src="./img/slider1.png" alt="img" />
+            <img class="slider-line__img" src="./img/slider2.png" alt="img" />
+            <img class="slider-line__img" src="./img/slider3.png" alt="img" />
+            <img class="slider-line__img" src="./img/slider4.png" alt="img" />
+            <img class="slider-line__img" src="./img/slider5.png" alt="img" />
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="btn slider__back" type="button">BACK</button>
+
+          <button class="btn slider__next" type="button">NEXT</button>
         </div>
       </div>
+    </section>
 
-      <div class="btns">
-        <button class="btn slider__back" type="button">BACK</button>
-
-        <button class="btn slider__next" type="button">NEXT</button>
+    <!-- SLIDER 2 -->
+    <section class="slider-2">
+      <div class="container">
+        <div class="slider-2__slider">
+          <div class="slider-2__slider-line">
+            <img class="slider-2__img active" src="./img/slider1.png" alt="img" />
+            <img class="slider-2__img" src="./img/slider2.png" alt="img" />
+            <img class="slider-2__img" src="./img/slider3.png" alt="img" />
+            <img class="slider-2__img" src="./img/slider4.png" alt="img" />
+            <img class="slider-2__img" src="./img/slider5.png" alt="img" />
+          </div>
+        </div>
+        <div class="slider-2__btns">
+          <button class="btn slider-2__btn" type="button">PRESS</button>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <script src="./js/slider.js"></script>
+    <!-- INFINITY-SLIDER -->
+    <section>
+      <div class="infinity-slider">
+        <div class="container">
+          <div class="infinity-slider__wrap">
+            <div class="infinity-slider__slider-line">
+              <img class="infinity-slider__img" src="./img/slider1.png" alt="img" />
+              <img class="infinity-slider__img" src="./img/slider2.png" alt="img" />
+              <img class="infinity-slider__img" src="./img/slider3.png" alt="img" />
+              <img class="infinity-slider__img" src="./img/slider4.png" alt="img" />
+              <img class="infinity-slider__img" src="./img/slider5.png" alt="img" />
+            </div>
+            <div class="infinity-slider__btns">
+              <button class="btn infinity-slider__btns--up" type="button">UP</button>
+              <button class="btn infinity-slider__btns--down" type="button">DOWN</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/slider.js" type="module"></script>
+    <script src="./js/slider2.js" type="module"></script>
+    <script src="./js/infinity-slider.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,26 @@
+.slider-2 {
+  &__slider-line {
+    display: flex;
+    padding-top: 50px;
+    margin-bottom: 50px;
+  }
+  &__img {
+    width: 80px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    &.active {
+      border: 2px solid skyblue;
+    }
+  }
+
+  &__btns {
+    padding-bottom: 25px;
+  }
+
+  &__btn {
+    margin: 0;
+  }
+}
